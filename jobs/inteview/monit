@@ -1,0 +1,5 @@
+check process inteview
+  with pidfile /var/vcap/sys/run/inteview/inteview.pid
+  start program "/var/vcap/jobs/inteview/bin/monit_debugger inteview_ctl '/var/vcap/jobs/inteview/bin/inteview_ctl start'"
+  stop program "/var/vcap/jobs/inteview/bin/monit_debugger inteview_ctl '/var/vcap/jobs/inteview/bin/inteview_ctl stop'"
+  group vcap

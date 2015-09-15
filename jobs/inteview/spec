@@ -1,0 +1,13 @@
+---
+name: inteview
+packages: []
+templates:
+  bin/monit_debugger: bin/monit_debugger
+  bin/inteview_ctl: bin/inteview_ctl
+  config/inteview.conf.erb: config/inteview.conf
+  data/properties.sh.erb: data/properties.sh
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+properties:
+  inteview.leader_address:
+    description: Hostname/IP to the leader/master of the cluster
